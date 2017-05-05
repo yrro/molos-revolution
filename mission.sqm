@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=840;
+		nextID=861;
 	};
 	class MarkerIDProvider
 	{
-		nextID=9;
+		nextID=14;
 	};
 	class LayerIndexProvider
 	{
-		nextID=86;
+		nextID=94;
 	};
 	class Camera
 	{
-		pos[]={28582.941,30.209099,25571.379};
-		dir[]={0.73583102,-0.61480105,-0.28409219};
-		up[]={0.57355666,0.78865665,-0.22144094};
-		aside[]={-0.36019748,2.5471672e-007,-0.93294966};
+		pos[]={27494.279,66.970634,25232.189};
+		dir[]={0.26237902,-0.8442601,-0.46754178};
+		up[]={0.41315517,0.53594375,-0.7362175};
+		aside[]={-0.87214673,1.3621757e-006,-0.48943898};
 	};
 };
 binarizationWanted=0;
@@ -278,6 +278,30 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -305,7 +329,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=48;
+		items=59;
 		class Item0
 		{
 			dataType="Layer";
@@ -1057,7 +1081,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -1945,13 +1969,13 @@ class Mission
 		class Item10
 		{
 			dataType="Marker";
-			position[]={28338.426,0,25716.016};
+			position[]={28401.752,-7.8076177,25731.922};
 			name="marker_0";
 			type="mil_arrow";
 			colorName="ColorEAST";
-			angle=337.18961;
+			angle=298.79895;
 			id=447;
-			atlOffset=-14.726519;
+			atlOffset=-12.719278;
 		};
 		class Item11
 		{
@@ -1964,13 +1988,13 @@ class Mission
 		class Item12
 		{
 			dataType="Marker";
-			position[]={28359.637,0,25809.711};
+			position[]={28507.211,-8.0776367,25606.996};
 			name="marker_2";
 			type="mil_arrow";
 			colorName="ColorEAST";
-			angle=233.59856;
+			angle=302.68158;
 			id=449;
-			atlOffset=-8.2820311;
+			atlOffset=4.680335;
 		};
 		class Item13
 		{
@@ -2260,7 +2284,7 @@ class Mission
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={28331.002,14.278228,25741.389};
+					position[]={28373.566,10.741829,25743.615};
 					type="GetOut";
 					class Effects
 					{
@@ -2271,9 +2295,9 @@ class Mission
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={28323.498,14.57312,25766.709};
+					position[]={28334.916,14.527946,25775.383};
 					type="SeekAndDestroy";
-					combatMode="GREEN";
+					combatMode="YELLOW";
 					combat="STEALTH";
 					class Effects
 					{
@@ -2354,7 +2378,7 @@ class Mission
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={28275.852,14.536308,25800.369};
+					position[]={28258.361,10.95814,25806.627};
 					type="GetOut";
 					class Effects
 					{
@@ -2365,9 +2389,9 @@ class Mission
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={28316.754,15.15,25794.568};
+					position[]={28316.754,15.15,25794.57};
 					type="SeekAndDestroy";
-					combatMode="GREEN";
+					combatMode="YELLOW";
 					combat="STEALTH";
 					class Effects
 					{
@@ -2680,37 +2704,15 @@ class Mission
 		class Item22
 		{
 			dataType="Marker";
-			position[]={28015.26,0,25645.277};
+			position[]={28046.59,-3.8129883,25603.508};
 			name="marker_5";
 			type="mil_arrow";
 			colorName="ColorGUER";
-			angle=64.757759;
+			angle=50.877621;
 			id=495;
-			atlOffset=-36.028728;
+			atlOffset=-36.776928;
 		};
 		class Item23
-		{
-			dataType="Marker";
-			position[]={28099.291,34.27124,25562.439};
-			name="marker_6";
-			type="mil_arrow";
-			colorName="ColorGUER";
-			angle=45.853439;
-			id=496;
-			atlOffset=3.5827579;
-		};
-		class Item24
-		{
-			dataType="Marker";
-			position[]={28174.984,23.786621,25498.408};
-			name="marker_7";
-			type="mil_arrow";
-			colorName="ColorGUER";
-			angle=30.663761;
-			id=497;
-			atlOffset=-1.9365807;
-		};
-		class Item25
 		{
 			dataType="Trigger";
 			position[]={28320.27,14.615874,25774.148};
@@ -2727,7 +2729,7 @@ class Mission
 			id=498;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item26
+		class Item24
 		{
 			dataType="Trigger";
 			position[]={28112.461,28.859974,25583.764};
@@ -2740,7 +2742,7 @@ class Mission
 			id=499;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item27
+		class Item25
 		{
 			dataType="Layer";
 			name="outpost stuff";
@@ -2835,7 +2837,7 @@ class Mission
 			id=509;
 			atlOffset=0.41480255;
 		};
-		class Item28
+		class Item26
 		{
 			dataType="Trigger";
 			position[]={28330.574,15.037727,25792.412};
@@ -2851,7 +2853,7 @@ class Mission
 			id=516;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item29
+		class Item27
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3056,7 +3058,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item30
+		class Item28
 		{
 			dataType="Group";
 			side="Independent";
@@ -3131,7 +3133,7 @@ class Mission
 			id=521;
 			atlOffset=0.20499897;
 		};
-		class Item31
+		class Item29
 		{
 			dataType="Group";
 			side="Independent";
@@ -3205,7 +3207,7 @@ class Mission
 			id=533;
 			atlOffset=9.940012;
 		};
-		class Item32
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3429,7 +3431,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item33
+		class Item31
 		{
 			dataType="Trigger";
 			position[]={28328.686,15.074472,25791.473};
@@ -3446,7 +3448,7 @@ class Mission
 			id=538;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item34
+		class Item32
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3498,7 +3500,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item35
+		class Item33
 		{
 			dataType="Trigger";
 			position[]={28561.887,-1.064415,25593.492};
@@ -3514,7 +3516,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=17.042999;
 		};
-		class Item36
+		class Item34
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3530,7 +3532,7 @@ class Mission
 			type="I_C_Boat_Transport_02_F";
 			atlOffset=23.984085;
 		};
-		class Item37
+		class Item35
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3546,7 +3548,7 @@ class Mission
 			type="I_C_Boat_Transport_01_F";
 			atlOffset=20.629354;
 		};
-		class Item38
+		class Item36
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3562,7 +3564,7 @@ class Mission
 			type="I_C_Boat_Transport_01_F";
 			atlOffset=17.770985;
 		};
-		class Item39
+		class Item37
 		{
 			dataType="Trigger";
 			position[]={28316.047,14.731533,25776.539};
@@ -3578,7 +3580,7 @@ class Mission
 			id=781;
 			type="EmptyDetector";
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Group";
 			side="Independent";
@@ -3627,7 +3629,7 @@ class Mission
 			};
 			id=782;
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Group";
 			side="East";
@@ -3825,7 +3827,7 @@ class Mission
 			id=811;
 			atlOffset=20.629354;
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Group";
 			side="East";
@@ -4023,7 +4025,7 @@ class Mission
 			id=813;
 			atlOffset=17.770985;
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Group";
 			side="East";
@@ -4305,7 +4307,7 @@ class Mission
 			id=817;
 			atlOffset=23.984085;
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4321,16 +4323,16 @@ class Mission
 			type="C_Boat_Civil_04_F";
 			atlOffset=22.485935;
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Marker";
-			position[]={27883.975,44.924778,25372.309};
+			position[]={28008.553,27.125366,25486.609};
 			name="marker_8";
 			type="n_motor_inf";
 			id=836;
-			atlOffset=-6.2898636;
+			atlOffset=-8.0580254;
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4342,7 +4344,7 @@ class Mission
 			id=837;
 			atlOffset=0.00049781799;
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4354,16 +4356,846 @@ class Mission
 			id=838;
 			atlOffset=16.873903;
 		};
+		class Item46
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28336.164,14.508221,25764.662};
+				angles[]={6.2818484,0,6.2791886};
+			};
+			id=847;
+			type="ModuleTaskCreate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskCreate_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="rearm";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleTaskCreate_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleTaskCreate_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleTaskCreate_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Rearm (optional)";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleTaskCreate_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_ID";
+					expression="_this setVariable ['ID',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleTaskCreate_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleTaskCreate_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASSIGNED";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleTaskCreate_F_IDParent";
+					expression="_this setVariable ['IDParent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=11;
+			};
+		};
+		class Item47
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28337.773,14.505084,25767.133};
+			};
+			id=848;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CANCELED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item48
+		{
+			dataType="Marker";
+			position[]={28419.828,1.852373,25722.598};
+			name="marker_9";
+			type="mil_start";
+			colorName="ColorEAST";
+			id=849;
+			atlOffset=-0.54541743;
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={27120.752,13.50313,24530.383};
+			name="marker_10";
+			type="flag_Altis";
+			id=850;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={28271.785,18.647684,25725.676};
+			name="marker_12";
+			type="mil_ambush";
+			colorName="ColorEAST";
+			angle=139.66159;
+			id=852;
+		};
+		class Item51
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28359.951,6.9920559,25648.555};
+				angles[]={6.1585021,0,5.9542522};
+			};
+			id=853;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Signal";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Tiger - elite spearhead of the landing force<br/>" \n "Rhino - main body of landing force";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item52
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28377.145,0.86924076,25620.258};
+				angles[]={6.1993828,0,6.1967349};
+			};
+			id=854;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Execution";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1. Sieze the outpost<br/>" \n "2. Repel the counterattack<br/>" \n "3. Signal Rhino to proceed with the landing<br/>";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item53
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28368.551,2.9219384,25634.227};
+				angles[]={6.2020273,0,6.1584988};
+			};
+			id=855;
+			type="ModuleCreateDiaryRecord_F";
+			atlOffset=-4.7683716e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mission";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="The first step in our invasion will be to capture the outpost at Cap Strigla. This will form the base from which we will strike out at the enemies of the people.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item54
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28386.461,-0.00054061413,25607.006};
+			};
+			id=856;
+			type="ModuleCreateDiaryRecord_F";
+			atlOffset=1.3859999;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A frightful hobgoblin stalks  the Republic of Altis. The people toil under a repressive government elected by their own false consciousness. It is time for us to purge the island of capitalist scum and the borgoise who are complicit in the repression of the workers of Altis.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item55
+		{
+			dataType="Marker";
+			position[]={28142.404,-10.679518,25515.939};
+			name="marker_6";
+			type="mil_arrow";
+			colorName="ColorGUER";
+			angle=43.715679;
+			id=857;
+			atlOffset=-37.200417;
+		};
+		class Item56
+		{
+			dataType="Marker";
+			position[]={28524.09,-2.7093873,25596.02};
+			name="marker_13";
+			type="o_inf";
+			id=858;
+			atlOffset=13.195705;
+		};
+		class Item57
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28325.721,14.596286,25773.439};
+			};
+			id=859;
+			type="ModuleTaskSetState_F";
+			atlOffset=-9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item58
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={27494.66,50.724998,25220.766};
+			};
+			title="mrap with HMG?";
+			description="how to make the gunner stay inside?";
+			id=860;
+			atlOffset=-0.00044250488;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=18;
+			nextID=24;
 		};
 		class Links
 		{
-			items=18;
+			items=24;
 			class Item0
 			{
 				linkID=0;
@@ -4542,6 +5374,66 @@ class Mission
 				class CustomData
 				{
 					type="WaypointActivation";
+				};
+			};
+			class Item18
+			{
+				linkID=18;
+				item0=404;
+				item1=847;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item19
+			{
+				linkID=19;
+				item0=847;
+				item1=264;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item20
+			{
+				linkID=20;
+				item0=848;
+				item1=847;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item21
+			{
+				linkID=21;
+				item0=848;
+				item1=499;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item22
+			{
+				linkID=22;
+				item0=404;
+				item1=859;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item23
+			{
+				linkID=23;
+				item0=859;
+				item1=403;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};
