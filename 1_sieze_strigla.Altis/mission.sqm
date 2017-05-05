@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=126;
+		nextID=134;
 	};
 	class Camera
 	{
-		pos[]={28366.926,55.75853,25759.928};
-		dir[]={-0.93704134,-0.34014705,0.079338275};
-		up[]={-0.33896047,0.94036233,0.028699625};
-		aside[]={0.084368184,2.0023435e-008,0.99645197};
+		pos[]={28275.357,116.64634,25725.938};
+		dir[]={-0.53892523,-0.56599027,-0.62391508};
+		up[]={-0.36999357,0.82439381,-0.42834148};
+		aside[]={-0.75678658,-4.6705827e-007,0.65369743};
 	};
 };
 binarizationWanted=0;
@@ -2778,7 +2778,7 @@ class Mission
 			class Attributes
 			{
 				name="incoming0";
-				onActivation="leader tiger1 groupChat ""Here they come, comrades! From the southeast!""";
+				onActivation="leader tiger1 groupChat ""Here they come, comrades! From the south-west!""";
 				activationBy="GUER";
 			};
 			id=499;
