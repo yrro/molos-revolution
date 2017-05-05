@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=118;
+		nextID=126;
 	};
 	class Camera
 	{
@@ -207,6 +207,8 @@ class ScenarioData
 {
 	author="yrro°";
 	overviewText="A frightful hobgoblin stalks  the Republic of Altis. The people toil under a repressive government elected by their own false consciousness. You will spearhead our invasion of the island: sieze the outpost at Cap Strigla!";
+	aIKills=1;
+	respawn=4;
 	class Header
 	{
 		gameType="Coop";
@@ -221,8 +223,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ReviveMode";
-			expression="false";
+			property="RespawnButton";
+			expression="true";
 			class Value
 			{
 				class data
@@ -234,7 +236,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -281,14 +283,33 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="None";
+								value="SwitchPlayer";
 							};
 						};
 					};
 				};
 			};
 		};
-		nAttributes=2;
+		class Attribute2
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=3;
 	};
 	class Category1
 	{
