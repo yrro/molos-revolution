@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=94;
+		nextID=102;
 	};
 	class Camera
 	{
-		pos[]={28221.621,83.032768,25869.377};
-		dir[]={0.42234695,-0.45926446,-0.78162628};
-		up[]={0.21836369,0.88821346,-0.4041208};
-		aside[]={-0.87985915,7.3682168e-007,-0.47543103};
+		pos[]={27469.281,172.06645,25423.24};
+		dir[]={0.23487402,-0.41762286,-0.87787616};
+		up[]={0.1079604,0.90853268,-0.40351745};
+		aside[]={-0.96610922,4.1304156e-007,-0.2584843};
 	};
 };
 binarizationWanted=0;
@@ -1930,7 +1930,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={28435.135,0.53513181,25723.465};
-			angle=-6.5583797;
+			angle=-6.5583787;
 			class Attributes
 			{
 				name="intro0";
@@ -1991,7 +1991,7 @@ class Mission
 			name="marker_0";
 			type="mil_arrow";
 			colorName="ColorEAST";
-			angle=298.79892;
+			angle=298.79889;
 			id=447;
 			atlOffset=-12.719278;
 		};
@@ -2186,6 +2186,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="qrf1";
 				combatMode="BLUE";
 				behaviour="CARELESS";
 			};
@@ -2326,6 +2327,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="qrf3";
 				combatMode="BLUE";
 				behaviour="CARELESS";
 			};
@@ -2420,6 +2422,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="qrf2";
 				combatMode="BLUE";
 				behaviour="CARELESS";
 			};
@@ -2656,12 +2659,12 @@ class Mission
 			class Attributes
 			{
 				name="defend0";
+				condition="call{({alive _x} count units qrf1) + ({alive _x} count units qrf2) + ({alive _x} count units qrf3) == 0}";
 				onActivation="leader tiger1 groupChat ""Comrades, we are victorious! The spearhead has been driven into the body of our imperialist oppressors."";";
-				sizeA=1000;
-				sizeB=1000;
+				sizeA=0;
+				sizeB=0;
 				timeout[]={10,10,10};
 				activationType="NOT PRESENT";
-				activationBy="GUER";
 			};
 			id=489;
 			type="EmptyDetectorAreaR50";
@@ -5220,6 +5223,7 @@ class Mission
 			};
 			id=862;
 			type="I_Truck_02_ammo_F";
+			atlOffset=-0.0071678162;
 		};
 		class Item60
 		{
@@ -5244,7 +5248,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={28314.025,15.225888,25763.512};
-				angles[]={-0,0,6.2823396};
+				angles[]={0,0,6.2823396};
 			};
 			side="Empty";
 			flags=4;
@@ -5402,7 +5406,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={28315.998,15.770578,25760.352};
-				angles[]={-0,4.573071,6.2817206};
+				angles[]={0,4.573071,6.2817206};
 			};
 			side="Empty";
 			flags=4;
@@ -5418,7 +5422,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={28321.275,14.975576,25760.199};
-				angles[]={-0,4.5283637,6.2817206};
+				angles[]={0,4.5283637,6.2817206};
 			};
 			side="Empty";
 			flags=4;
@@ -5434,7 +5438,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={28324.857,34.545002,25783.77};
-				angles[]={-0,0.021594914,0};
+				angles[]={0,0.021594914,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5450,7 +5454,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={28317.512,15.325987,25760.496};
-				angles[]={-0,3.0202503,6.2817206};
+				angles[]={0,3.0202503,6.2817206};
 			};
 			side="Empty";
 			flags=4;
