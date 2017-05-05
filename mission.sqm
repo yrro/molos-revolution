@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=885;
+		nextID=897;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=102;
+		nextID=110;
 	};
 	class Camera
 	{
-		pos[]={27469.281,172.06645,25423.24};
-		dir[]={0.23487402,-0.41762286,-0.87787616};
-		up[]={0.1079604,0.90853268,-0.40351745};
-		aside[]={-0.96610922,4.1304156e-007,-0.2584843};
+		pos[]={28586.916,42.933849,25542.137};
+		dir[]={-0.48442355,-0.43802723,0.75743151};
+		up[]={-0.23604919,0.89886642,0.36908016};
+		aside[]={0.84251231,-1.0163349e-006,0.53883809};
 	};
 };
 binarizationWanted=0;
@@ -1930,7 +1930,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={28435.135,0.53513181,25723.465};
-			angle=-6.5583787;
+			angle=-6.5583768;
 			class Attributes
 			{
 				name="intro0";
@@ -4361,7 +4361,7 @@ class Mission
 				position[]={28127.184,27.934999,25573.223};
 			};
 			title="stray units";
-			description="spawned by site module... why?";
+			description="spawned by site module, but harmless";
 			id=837;
 			atlOffset=0.00049781799;
 		};
@@ -5628,38 +5628,38 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=540;
-				item1=827;
+				item0=404;
+				item1=847;
 				class CustomData
 				{
-					type="WaypointActivation";
+					type="Sync";
 				};
 			};
 			class Item16
 			{
 				linkID=16;
-				item0=540;
-				item1=825;
+				item0=847;
+				item1=264;
 				class CustomData
 				{
-					type="WaypointActivation";
+					type="Sync";
 				};
 			};
 			class Item17
 			{
 				linkID=17;
-				item0=823;
-				item1=540;
+				item0=848;
+				item1=847;
 				class CustomData
 				{
-					type="WaypointActivation";
+					type="Sync";
 				};
 			};
 			class Item18
 			{
 				linkID=18;
-				item0=404;
-				item1=847;
+				item0=848;
+				item1=499;
 				class CustomData
 				{
 					type="Sync";
@@ -5668,8 +5668,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=847;
-				item1=264;
+				item0=404;
+				item1=859;
 				class CustomData
 				{
 					type="Sync";
@@ -5678,8 +5678,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=848;
-				item1=847;
+				item0=859;
+				item1=403;
 				class CustomData
 				{
 					type="Sync";
@@ -5688,31 +5688,31 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=848;
-				item1=499;
+				item0=540;
+				item1=827;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 			class Item22
 			{
 				linkID=22;
-				item0=404;
-				item1=859;
+				item0=540;
+				item1=825;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 			class Item23
 			{
 				linkID=23;
-				item0=859;
-				item1=403;
+				item0=540;
+				item1=823;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 		};
