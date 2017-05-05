@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={27494.279,66.970634,25232.189};
-		dir[]={0.26237902,-0.8442601,-0.46754178};
-		up[]={0.41315517,0.53594375,-0.7362175};
-		aside[]={-0.87214673,1.3621757e-006,-0.48943898};
+		pos[]={28341.438,69.730194,25828.605};
+		dir[]={-0.2643764,-0.67064458,-0.69322622};
+		up[]={-0.23898152,0.7417298,-0.62663287};
+		aside[]={-0.93444878,9.588548e-007,0.35637152};
 	};
 };
 binarizationWanted=0;
@@ -2847,7 +2847,7 @@ class Mission
 				condition="triggerActivated defend0 && mortar getVariable ""firedFlare""";
 				sizeA=0;
 				sizeB=0;
-				timeout[]={10,10,10};
+				timeout[]={5,5,5};
 				activationType="NOT PRESENT";
 			};
 			id=516;
