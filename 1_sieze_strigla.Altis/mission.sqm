@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={28279.434,19.695505,25752.438};
-		dir[]={0.65591532,-0.48565623,0.57804281};
-		up[]={0.36442086,0.87409228,0.3211568};
-		aside[]={0.66123557,1.0652002e-007,-0.75031233};
+		pos[]={28413.885,13.315141,25735.727};
+		dir[]={0.77247715,-0.44999704,-0.44833508};
+		up[]={0.38927647,0.89297432,-0.22592959};
+		aside[]={-0.5020172,5.3129042e-008,-0.86497593};
 	};
 };
 binarizationWanted=0;
@@ -1025,8 +1025,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={28431.119,0.0014388561,25729.797};
-						angles[]={0,5.2575865,0};
+						position[]={28431.119,0.0015867911,25729.797};
+						angles[]={0,5.2575774,0};
 					};
 					side="East";
 					flags=7;
@@ -1038,7 +1038,7 @@ class Mission
 					};
 					id=264;
 					type="I_C_Soldier_Bandit_4_F";
-					atlOffset=0.045852065;
+					atlOffset=0.046;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1056,7 +1056,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -1287,7 +1287,7 @@ class Mission
 				behaviour="STEALTH";
 			};
 			id=318;
-			atlOffset=0.045852065;
+			atlOffset=0.046;
 			class CustomAttributes
 			{
 				class Attribute0
