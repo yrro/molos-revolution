@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={28487.822,63.588535,25590.035};
-		dir[]={0.86569715,-0.42268857,-0.26857805};
-		up[]={0.40379873,0.90622175,-0.12527573};
-		aside[]={-0.2963433,1.4956458e-007,-0.95519161};
+		pos[]={28544.406,63.588535,25526.096};
+		dir[]={0.7217834,-0.58733875,0.36646035};
+		up[]={0.52376115,0.80928808,0.26592198};
+		aside[]={0.45275691,4.2654574e-007,-0.89175457};
 	};
 };
 binarizationWanted=0;
@@ -3853,26 +3853,27 @@ class Mission
 				class Item5
 				{
 					dataType="Waypoint";
-					position[]={28593.92,0,25522.588};
+					position[]={28593.92,-0.00033950806,25522.588};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=823;
 					type="Move";
-					atlOffset=18.967339;
+					atlOffset=18.966999;
 				};
 				class Item6
 				{
 					dataType="Waypoint";
-					position[]={28402.25,0,25632.15};
+					position[]={28402.25,-0.00048625469,25632.15};
 					type="GetOut";
+					combatMode="RED";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=824;
-					atlOffset=1.1534863;
+					atlOffset=1.153;
 				};
 				class Item7
 				{
@@ -3889,6 +3890,7 @@ class Mission
 			class Attributes
 			{
 				combatMode="GREEN";
+				speedMode="FULL";
 			};
 			class CrewLinks
 			{
@@ -4052,20 +4054,21 @@ class Mission
 				class Item5
 				{
 					dataType="Waypoint";
-					position[]={28601.814,0,25554.506};
+					position[]={28601.814,0.00043487549,25554.506};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=825;
 					type="Move";
-					atlOffset=16.326139;
+					atlOffset=16.326574;
 				};
 				class Item6
 				{
 					dataType="Waypoint";
 					position[]={28415.199,0.00010591745,25657.93};
 					type="GetOut";
+					combatMode="RED";
 					class Effects
 					{
 					};
@@ -4088,6 +4091,7 @@ class Mission
 			class Attributes
 			{
 				combatMode="GREEN";
+				speedMode="FULL";
 			};
 			class CrewLinks
 			{
@@ -4316,6 +4320,8 @@ class Mission
 					dataType="Waypoint";
 					position[]={28429.689,0.00010460615,25687.061};
 					type="GetOut";
+					combatMode="RED";
+					speed="FULL";
 					class Effects
 					{
 					};
