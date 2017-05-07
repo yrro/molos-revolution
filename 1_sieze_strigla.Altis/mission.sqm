@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=160;
+		nextID=169;
 	};
 	class Camera
 	{
-		pos[]={28544.406,63.588535,25526.096};
-		dir[]={0.7217834,-0.58733875,0.36646035};
-		up[]={0.52376115,0.80928808,0.26592198};
-		aside[]={0.45275691,4.2654574e-007,-0.89175457};
+		pos[]={28379.867,93.549126,25739.209};
+		dir[]={-0.62578112,-0.67098731,0.39773676};
+		up[]={-0.5663287,0.74141908,0.35994938};
+		aside[]={0.53641087,-1.9953586e-007,0.84396565};
 	};
 };
 binarizationWanted=0;
@@ -2664,7 +2664,7 @@ class Mission
 			{
 				name="defend0";
 				condition="call{({alive _x} count units qrf1) + ({alive _x} count units qrf2) + ({alive _x} count units qrf3) == 0}";
-				onActivation="leader tiger1 groupChat ""Comrades, we are victorious! The spearhead has been driven into the body of our imperialist oppressors."";";
+				onActivation="leader tiger1 groupChat ""Comrades, we are victorious! This outpost is ours!"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={10,10,10};
@@ -2761,7 +2761,7 @@ class Mission
 			class Attributes
 			{
 				name="incoming0";
-				onActivation="leader tiger1 groupChat ""Here they come, comrades! From the south-west!""";
+				onActivation="leader tiger1 groupChat ""Here they come, comrades--look to south-west, along the road!"";";
 				activationBy="GUER";
 			};
 			id=499;
