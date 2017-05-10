@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={28346.594,45.002289,25773.469};
-		dir[]={-0.85230917,-0.48036727,0.20747969};
-		up[]={-0.46691975,0.87693727,0.11366301};
-		aside[]={0.23654176,1.8918072e-006,0.97173196};
+		pos[]={28272.262,28.286266,25752.619};
+		dir[]={0.61890543,-0.64705819,0.44553563};
+		up[]={0.52524555,0.76229817,0.37811217};
+		aside[]={0.58430737,1.9348226e-007,-0.81166315};
 	};
 };
 binarizationWanted=0;
@@ -3719,6 +3719,7 @@ class Mission
 						skill=0.44999999;
 						rank="CORPORAL";
 						init="[this, ""STAND"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
+						presence=0.50000036;
 					};
 					id=783;
 					type="I_Soldier_GL_F";
@@ -3779,6 +3780,7 @@ class Mission
 					{
 						skill=0.40000001;
 						init="[this, ""WATCH"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
+						presence=0.50000036;
 					};
 					id=784;
 					type="I_soldier_F";
