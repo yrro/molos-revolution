@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=973;
+		nextID=974;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=178;
+		nextID=196;
 	};
 	class Camera
 	{
-		pos[]={28380.82,34.935226,25748.057};
-		dir[]={0.68651634,-0.56756806,-0.45474061};
-		up[]={0.4733057,0.8231923,-0.31351179};
-		aside[]={-0.5522784,7.5912976e-007,-0.83378077};
+		pos[]={28415.381,67.01075,25742.795};
+		dir[]={-0.81775892,-0.51790732,0.2515426};
+		up[]={-0.4951863,0.85530221,0.15231889};
+		aside[]={0.29402792,1.4743855e-006,0.95590883};
 	};
 };
 binarizationWanted=0;
@@ -382,7 +382,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=83;
+		items=84;
 		class Item0
 		{
 			dataType="Layer";
@@ -2938,7 +2938,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0.15";
+							value="0.1";
 						};
 					};
 				};
@@ -6194,6 +6194,7 @@ class Mission
 						skill=0.44999999;
 						rank="CORPORAL";
 						init="[group this, getPos this, 120] call BIS_fnc_taskPatrol";
+						presence=0.49720079;
 					};
 					id=898;
 					type="I_Soldier_GL_F";
@@ -6251,6 +6252,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						presence=0.49720079;
 					};
 					id=909;
 					type="I_Soldier_lite_F";
@@ -6267,6 +6269,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						presence=0.49720079;
 					};
 					id=912;
 					type="I_medic_F";
@@ -6299,6 +6302,7 @@ class Mission
 						skill=0.44999999;
 						rank="CORPORAL";
 						init="[group this, getPos this, 80] call BIS_fnc_taskPatrol";
+						presence=0.50000036;
 					};
 					id=906;
 					type="I_Soldier_GL_F";
@@ -6358,6 +6362,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						presence=0.50000036;
 					};
 					id=907;
 					type="I_soldier_F";
@@ -6397,6 +6402,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						presence=0.50000036;
 					};
 					id=914;
 					type="I_Soldier_AR_F";
@@ -6945,6 +6951,17 @@ class Mission
 			};
 			id=971;
 			type="I_MRAP_03_hmg_F";
+		};
+		class Item83
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={28371.828,1.757,25625.104};
+			};
+			title="diary record appear twice";
+			id=973;
+			atlOffset=-0.00045132637;
 		};
 	};
 	class Connections
