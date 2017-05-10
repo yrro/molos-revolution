@@ -8,11 +8,11 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=974;
+		nextID=975;
 	};
 	class MarkerIDProvider
 	{
-		nextID=14;
+		nextID=15;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={28272.262,28.286266,25752.619};
-		dir[]={0.61890543,-0.64705819,0.44553563};
-		up[]={0.52524555,0.76229817,0.37811217};
-		aside[]={0.58430737,1.9348226e-007,-0.81166315};
+		pos[]={28342.59,57.147141,25706.848};
+		dir[]={-0.34837765,-0.52871573,0.77404273};
+		up[]={-0.21700186,0.84878802,0.48214439};
+		aside[]={0.91192061,-1.8952414e-007,0.41043502};
 	};
 };
 binarizationWanted=0;
@@ -3109,7 +3109,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={28340.563,14.784111,25788.098};
+						position[]={28340.563,14.784495,25788.098};
 						angles[]={0,4.1087842,0};
 					};
 					side="Independent";
@@ -3121,7 +3121,6 @@ class Mission
 					};
 					id=522;
 					type="I_officer_F";
-					atlOffset=0.20499897;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3171,7 +3170,6 @@ class Mission
 				behaviour="SAFE";
 			};
 			id=521;
-			atlOffset=0.20499897;
 		};
 		class Item27
 		{
@@ -3193,7 +3191,6 @@ class Mission
 					class Attributes
 					{
 						init="[this, ""WATCH"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
-						presence=0.5;
 					};
 					id=534;
 					type="I_Soldier_M_F";
@@ -3719,6 +3716,7 @@ class Mission
 						skill=0.44999999;
 						rank="CORPORAL";
 						init="[this, ""STAND"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
+						name="sentry1";
 						presence=0.50000036;
 					};
 					id=783;
@@ -3780,7 +3778,7 @@ class Mission
 					{
 						skill=0.40000001;
 						init="[this, ""WATCH"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
-						presence=0.50000036;
+						presenceCondition="alive sentry1";
 					};
 					id=784;
 					type="I_soldier_F";
@@ -6197,6 +6195,7 @@ class Mission
 						skill=0.44999999;
 						rank="CORPORAL";
 						init="[group this, getPos this, 120] call BIS_fnc_taskPatrol";
+						name="patrol2";
 						presence=0.49720079;
 					};
 					id=898;
@@ -6249,17 +6248,58 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={28293.182,15.319499,25764.646};
+						position[]={28293.18,15.319294,25764.646};
 					};
 					side="Independent";
 					flags=5;
 					class Attributes
 					{
-						presence=0.49720079;
+						presenceCondition="alive patrol2";
 					};
 					id=909;
 					type="I_Soldier_lite_F";
-					atlOffset=0.00024414063;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -6272,10 +6312,52 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						presence=0.49720079;
+						presenceCondition="alive patrol2";
 					};
 					id=912;
 					type="I_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -6305,7 +6387,8 @@ class Mission
 						skill=0.44999999;
 						rank="CORPORAL";
 						init="[group this, getPos this, 80] call BIS_fnc_taskPatrol";
-						presence=0.50279975;
+						name="patrol1";
+						presence=0.50000036;
 					};
 					id=906;
 					type="I_Soldier_GL_F";
@@ -6365,7 +6448,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						presence=0.50279975;
+						presenceCondition="alive patrol1";
 					};
 					id=907;
 					type="I_soldier_F";
@@ -6418,17 +6501,58 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={28343.943,14.476311,25773.193};
+						position[]={28343.943,14.476398,25773.193};
 					};
 					side="Independent";
 					flags=5;
 					class Attributes
 					{
-						presence=0.50279975;
+						presenceCondition="alive patrol1";
 					};
 					id=914;
 					type="I_Soldier_AR_F";
-					atlOffset=-8.6784363e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -6523,7 +6647,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={28313.459,14.74857,25773.729};
+						position[]={28313.461,14.748549,25773.729};
 					};
 					side="Independent";
 					flags=5;
@@ -6531,42 +6655,171 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						presence=0.66237432;
 					};
 					id=922;
 					type="I_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={28303.459,15.060754,25773.729};
+						position[]={28303.461,15.060741,25773.729};
 					};
 					side="Independent";
 					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
+						presence=0.65677512;
 					};
 					id=923;
 					type="I_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={28318.459,14.619919,25768.729};
+						position[]={28318.461,14.619897,25768.729};
 					};
 					side="Independent";
 					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
+						presence=0.65677512;
 					};
 					id=924;
 					type="I_Soldier_LAT_F";
 					atlOffset=9.5367432e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
