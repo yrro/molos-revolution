@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=975;
+		nextID=976;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=205;
+		nextID=214;
 	};
 	class Camera
 	{
-		pos[]={28341.855,57.147141,25754.135};
-		dir[]={-0.34837765,-0.52871573,0.77404273};
-		up[]={-0.21700186,0.84878802,0.48214439};
-		aside[]={0.91192061,-1.8952414e-007,0.41043502};
+		pos[]={28481.705,72.203697,25626.137};
+		dir[]={-0.50017715,-0.5190134,0.6932081};
+		up[]={-0.30370054,0.85474551,0.42090723};
+		aside[]={0.81097555,2.332963e-007,0.58515179};
 	};
 };
 binarizationWanted=0;
@@ -73,7 +73,8 @@ addons[]=
 	"A3_Structures_F_Items_Vessels",
 	"A3_Weapons_F_Mark",
 	"A3_Structures_F_Items_Tools",
-	"A3_Structures_F_Mil_BagFence"
+	"A3_Structures_F_Mil_BagFence",
+	"A3_Structures_F_Mil_Flags"
 };
 class AddonsMetaData
 {
@@ -5496,7 +5497,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -5606,7 +5607,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -5716,7 +5717,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -5826,7 +5827,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -6512,6 +6513,7 @@ class Mission
 					};
 					id=914;
 					type="I_Soldier_AR_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6660,6 +6662,7 @@ class Mission
 					};
 					id=922;
 					type="I_Soldier_AR_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7230,25 +7233,31 @@ class Mission
 		};
 		class Item83
 		{
-			dataType="Comment";
+			dataType="Object";
 			class PositionInfo
 			{
-				position[]={28371.828,1.757,25625.104};
+				position[]={28276.123,19.549423,25777.395};
+				angles[]={0,1.085686,0};
 			};
-			title="diary record appear twice";
-			id=973;
-			atlOffset=-0.00045132637;
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=975;
+			type="Flag_AAF_F";
+			atlOffset=0.0165205;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=24;
+			nextID=28;
 		};
 		class Links
 		{
-			items=24;
+			items=28;
 			class Item0
 			{
 				linkID=0;
@@ -7487,6 +7496,46 @@ class Mission
 				class CustomData
 				{
 					type="WaypointActivation";
+				};
+			};
+			class Item24
+			{
+				linkID=24;
+				item0=854;
+				item1=264;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item25
+			{
+				linkID=25;
+				item0=853;
+				item1=264;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item26
+			{
+				linkID=26;
+				item0=855;
+				item1=264;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item27
+			{
+				linkID=27;
+				item0=856;
+				item1=264;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};
