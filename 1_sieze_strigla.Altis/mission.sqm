@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={28342.59,57.147141,25706.848};
+		pos[]={28341.855,57.147141,25754.135};
 		dir[]={-0.34837765,-0.52871573,0.77404273};
 		up[]={-0.21700186,0.84878802,0.48214439};
 		aside[]={0.91192061,-1.8952414e-007,0.41043502};
@@ -3191,6 +3191,7 @@ class Mission
 					class Attributes
 					{
 						init="[this, ""WATCH"", ""ASIS""] call BIS_fnc_ambientAnimCombat;";
+						presence=0.57838786;
 					};
 					id=534;
 					type="I_Soldier_M_F";
